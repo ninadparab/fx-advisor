@@ -1,0 +1,80 @@
+{
+    "Table": {
+        "Name": "usd",
+        "DatabaseName": "fx_rates_db",
+        "Description": "",
+        "Owner": "owner",
+        "CreateTime": "2026-06-02T11:33:04-07:00",
+        "UpdateTime": "2026-06-02T12:41:37-07:00",
+        "LastAccessTime": "2026-06-02T12:41:37-07:00",
+        "Retention": 0,
+        "StorageDescriptor": {
+            "Columns": [
+                {
+                    "Name": "date",
+                    "Type": "string"
+                },
+                {
+                    "Name": "base",
+                    "Type": "string"
+                },
+                {
+                    "Name": "rates",
+                    "Type": "struct<EUR:double,GBP:double,INR:double>"
+                },
+                {
+                    "Name": "fetched_at",
+                    "Type": "string"
+                }
+            ],
+            "Location": "s3://fx-rates-ninpar/raw/usd/",
+            "InputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+            "OutputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+            "Compressed": false,
+            "NumberOfBuckets": -1,
+            "SerdeInfo": {
+                "SerializationLibrary": "org.openx.data.jsonserde.JsonSerDe",
+                "Parameters": {
+                    "paths": "base,date,fetched_at,rates"
+                }
+            },
+            "BucketColumns": [],
+            "SortColumns": [],
+            "Parameters": {
+                "sizeKey": "38267",
+                "objectCount": "278",
+                "UPDATED_BY_CRAWLER": "fx-rates-crawler",
+                "CRAWL_RUN_ID": "40701622-6a0f-4965-9cba-c6ad7050d263",
+                "recordCount": "278",
+                "CrawlerSchemaSerializerVersion": "1.0",
+                "averageRecordSize": "135",
+                "compressionType": "none",
+                "CrawlerSchemaDeserializerVersion": "1.0",
+                "classification": "json",
+                "typeOfData": "file"
+            },
+            "StoredAsSubDirectories": false
+        },
+        "PartitionKeys": [],
+        "TableType": "EXTERNAL_TABLE",
+        "Parameters": {
+            "sizeKey": "38267",
+            "objectCount": "278",
+            "UPDATED_BY_CRAWLER": "fx-rates-crawler",
+            "CRAWL_RUN_ID": "40701622-6a0f-4965-9cba-c6ad7050d263",
+            "recordCount": "278",
+            "CrawlerSchemaSerializerVersion": "1.0",
+            "averageRecordSize": "135",
+            "compressionType": "none",
+            "CrawlerSchemaDeserializerVersion": "1.0",
+            "classification": "json",
+            "typeOfData": "file"
+        },
+        "CreatedBy": "arn:aws:sts::493980122822:assumed-role/AWSGlueServiceRole-fx-glue-role/AWS-Crawler",
+        "IsRegisteredWithLakeFormation": false,
+        "CatalogId": "493980122822",
+        "VersionId": "4",
+        "IsMultiDialectView": false,
+        "IsMaterializedView": false
+    }
+}

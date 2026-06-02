@@ -1,0 +1,50 @@
+{
+    "Crawler": {
+        "Name": "fx-rates-crawler",
+        "Role": "service-role/AWSGlueServiceRole-fx-glue-role",
+        "Targets": {
+            "S3Targets": [
+                {
+                    "Path": "s3://fx-rates-ninpar/raw/usd/",
+                    "Exclusions": []
+                }
+            ],
+            "JdbcTargets": [],
+            "MongoDBTargets": [],
+            "DynamoDBTargets": [],
+            "CatalogTargets": [],
+            "DeltaTargets": [],
+            "IcebergTargets": [],
+            "HudiTargets": []
+        },
+        "DatabaseName": "fx_rates_db",
+        "Classifiers": [],
+        "RecrawlPolicy": {
+            "RecrawlBehavior": "CRAWL_EVERYTHING"
+        },
+        "SchemaChangePolicy": {
+            "UpdateBehavior": "UPDATE_IN_DATABASE",
+            "DeleteBehavior": "DEPRECATE_IN_DATABASE"
+        },
+        "LineageConfiguration": {
+            "CrawlerLineageSettings": "DISABLE"
+        },
+        "State": "READY",
+        "CrawlElapsedTime": 0,
+        "CreationTime": "2026-06-02T11:32:06-07:00",
+        "LastUpdated": "2026-06-02T11:32:06-07:00",
+        "LastCrawl": {
+            "Status": "SUCCEEDED",
+            "LogGroup": "/aws-glue/crawlers",
+            "LogStream": "fx-rates-crawler",
+            "MessagePrefix": "40701622-6a0f-4965-9cba-c6ad7050d263",
+            "StartTime": "2026-06-02T12:40:58-07:00"
+        },
+        "Version": 1,
+        "Configuration": "{\"Version\":1.0,\"CreatePartitionIndex\":true}",
+        "LakeFormationConfiguration": {
+            "UseLakeFormationCredentials": false,
+            "AccountId": ""
+        }
+    }
+}
