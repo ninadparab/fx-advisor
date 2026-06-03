@@ -18,7 +18,7 @@ def lambda_handler(event, context):
     
     for days_ago in range(1, 400):
         target_date = (datetime.now() - timedelta(days=days_ago)).strftime('%Y-%m-%d')
-        url = f"https://api.frankfurter.app/{target_date}?from=USD&to=INR,EUR,GBP"
+        url = f"https://api.frankfurter.app/{target_date}?from=USD&to=INR,EUR,GBP,MXN,PHP"
         
         try:
             req = urllib.request.Request(

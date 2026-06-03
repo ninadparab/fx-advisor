@@ -7,11 +7,11 @@ from datetime import datetime, timedelta
 def lambda_handler(event, context):
     
     # Read from environment variables instead of hardcoding
-    bucket_name = os.environ.get('BUCKET_NAME', 'fx-rates-yourname')
-    region = os.environ.get('AWS_REGION_NAME', 'us-east-2')
+    bucket_name = os.environ.get('BUCKET_NAME')
+    region = os.environ.get('AWS_REGION_NAME')
     
     target_date = (datetime.now() - timedelta(days=2)).strftime('%Y-%m-%d')
-    url = f"https://api.frankfurter.app/{target_date}?from=USD&to=INR,EUR,GBP"
+    url = f"https://api.frankfurter.app/{target_date}?from=USD&to=INR,EUR,GBP,MXN,PHP"
     
     print(f"Fetching rates for {target_date}")
     
