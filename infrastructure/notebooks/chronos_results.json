@@ -1,0 +1,52 @@
+{
+  "usd_inr": {
+    "model": "chronos-t5-small",
+    "test_days": 60,
+    "naive_mae": 0.32100000000000034,
+    "chronos_mae": 0.3190261739095047,
+    "theil_u": 0.9938510090638766,
+    "direction_accuracy": 0.6333333333333333,
+    "naive_mape": 0.3409488643034952,
+    "chronos_mape": 0.33906617328843147
+  },
+  "usd_eur": {
+    "model": "chronos-t5-small",
+    "test_days": 60,
+    "naive_mae": 0.0024015000000000026,
+    "chronos_mae": 0.002543198025703427,
+    "theil_u": 1.0590039665639908,
+    "direction_accuracy": 0.4666666666666667,
+    "naive_mape": 0.27948565593405256,
+    "chronos_mape": 0.2960052708630818
+  },
+  "usd_gbp": {
+    "model": "chronos-t5-small",
+    "test_days": 60,
+    "naive_mae": 0.002362333333333333,
+    "chronos_mae": 0.0023776674149831147,
+    "theil_u": 1.0064910744954627,
+    "direction_accuracy": 0.5166666666666667,
+    "naive_mape": 0.3170297061599498,
+    "chronos_mape": 0.31934686800189777
+  },
+  "usd_mxn": {
+    "model": "chronos-t5-small",
+    "test_days": 60,
+    "naive_mae": 0.07945166666666648,
+    "chronos_mae": 0.07676598297119117,
+    "theil_u": 0.9661972642217451,
+    "direction_accuracy": 0.5333333333333333,
+    "naive_mape": 0.45246557536589543,
+    "chronos_mape": 0.4368999885157163
+  },
+  "usd_php": {
+    "model": "chronos-t5-small",
+    "test_days": 60,
+    "naive_mae": 0.23518333333333305,
+    "chronos_mae": 0.23382576395670565,
+    "theil_u": 0.9942276123167993,
+    "direction_accuracy": 0.5666666666666667,
+    "naive_mape": 0.38929982023584375,
+    "chronos_mape": 0.38700591093623987
+  }
+}
