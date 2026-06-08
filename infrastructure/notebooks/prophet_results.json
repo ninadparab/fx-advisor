@@ -1,0 +1,147 @@
+{
+  "usd_inr": {
+    "basic": {
+      "model": "prophet-basic",
+      "test_days": 60,
+      "naive_mae": 0.32100000000000034,
+      "prophet_mae": 0.6809370303923311,
+      "theil_u": 2.1212991601007176,
+      "direction_accuracy": 0.4166666666666667,
+      "interval_coverage_80": 0.5166666666666667
+    },
+    "events": {
+      "model": "prophet-events",
+      "test_days": 60,
+      "naive_mae": 0.32100000000000034,
+      "prophet_mae": 0.696188042276963,
+      "theil_u": 2.1688101005512843,
+      "direction_accuracy": 0.43333333333333335,
+      "interval_coverage_80": 0.4666666666666667
+    },
+    "full": {
+      "model": "prophet-full",
+      "test_days": 60,
+      "naive_mae": 0.32100000000000034,
+      "prophet_mae": 0.7169439864159147,
+      "theil_u": 2.2334703626663988,
+      "direction_accuracy": 0.4166666666666667,
+      "interval_coverage_80": 0.43333333333333335
+    }
+  },
+  "usd_eur": {
+    "basic": {
+      "model": "prophet-basic",
+      "test_days": 60,
+      "naive_mae": 0.0024015000000000026,
+      "prophet_mae": 0.008988122013049897,
+      "theil_u": 3.7427116439932906,
+      "direction_accuracy": 0.5166666666666667,
+      "interval_coverage_80": 0.4666666666666667
+    },
+    "events": {
+      "model": "prophet-events",
+      "test_days": 60,
+      "naive_mae": 0.0024015000000000026,
+      "prophet_mae": 0.009061803490883341,
+      "theil_u": 3.7733930838573104,
+      "direction_accuracy": 0.5166666666666667,
+      "interval_coverage_80": 0.45
+    },
+    "full": {
+      "model": "prophet-full",
+      "test_days": 60,
+      "naive_mae": 0.0024015000000000026,
+      "prophet_mae": 0.009061803490883341,
+      "theil_u": 3.7733930838573104,
+      "direction_accuracy": 0.5166666666666667,
+      "interval_coverage_80": 0.45
+    }
+  },
+  "usd_gbp": {
+    "basic": {
+      "model": "prophet-basic",
+      "test_days": 60,
+      "naive_mae": 0.002362333333333333,
+      "prophet_mae": 0.006836015706754291,
+      "theil_u": 2.893755766934228,
+      "direction_accuracy": 0.6333333333333333,
+      "interval_coverage_80": 0.45
+    },
+    "events": {
+      "model": "prophet-events",
+      "test_days": 60,
+      "naive_mae": 0.002362333333333333,
+      "prophet_mae": 0.006876302187009688,
+      "theil_u": 2.9108094484307983,
+      "direction_accuracy": 0.6333333333333333,
+      "interval_coverage_80": 0.4666666666666667
+    },
+    "full": {
+      "model": "prophet-full",
+      "test_days": 60,
+      "naive_mae": 0.002362333333333333,
+      "prophet_mae": 0.006876302187009688,
+      "theil_u": 2.9108094484307983,
+      "direction_accuracy": 0.6333333333333333,
+      "interval_coverage_80": 0.4166666666666667
+    }
+  },
+  "usd_mxn": {
+    "basic": {
+      "model": "prophet-basic",
+      "test_days": 60,
+      "naive_mae": 0.07945166666666648,
+      "prophet_mae": 0.295733919540368,
+      "theil_u": 3.7221864807581384,
+      "direction_accuracy": 0.5,
+      "interval_coverage_80": 0.35
+    },
+    "events": {
+      "model": "prophet-events",
+      "test_days": 60,
+      "naive_mae": 0.07945166666666648,
+      "prophet_mae": 0.30117601938324345,
+      "theil_u": 3.7906822099378346,
+      "direction_accuracy": 0.48333333333333334,
+      "interval_coverage_80": 0.35
+    },
+    "full": {
+      "model": "prophet-full",
+      "test_days": 60,
+      "naive_mae": 0.07945166666666648,
+      "prophet_mae": 0.30233704334820105,
+      "theil_u": 3.8052951691577914,
+      "direction_accuracy": 0.48333333333333334,
+      "interval_coverage_80": 0.31666666666666665
+    }
+  },
+  "usd_php": {
+    "basic": {
+      "model": "prophet-basic",
+      "test_days": 60,
+      "naive_mae": 0.23518333333333305,
+      "prophet_mae": 0.6049086273887004,
+      "theil_u": 2.572072683957343,
+      "direction_accuracy": 0.55,
+      "interval_coverage_80": 0.55
+    },
+    "events": {
+      "model": "prophet-events",
+      "test_days": 60,
+      "naive_mae": 0.23518333333333305,
+      "prophet_mae": 0.6197112157368978,
+      "theil_u": 2.6350133189861746,
+      "direction_accuracy": 0.5666666666666667,
+      "interval_coverage_80": 0.5
+    },
+    "full": {
+      "model": "prophet-full",
+      "test_days": 60,
+      "naive_mae": 0.23518333333333305,
+      "prophet_mae": 0.6245921765852692,
+      "theil_u": 2.6557671741985827,
+      "direction_accuracy": 0.5666666666666667,
+      "interval_coverage_80": 0.48333333333333334
+    }
+  }
+}
