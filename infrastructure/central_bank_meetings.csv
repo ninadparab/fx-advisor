@@ -1,0 +1,82 @@
+date,country,central_bank,event,source
+2024-01-31,US,FOMC,Rate Decision,federalreserve.gov
+2024-03-20,US,FOMC,Rate Decision,federalreserve.gov
+2024-05-01,US,FOMC,Rate Decision,federalreserve.gov
+2024-06-12,US,FOMC,Rate Decision,federalreserve.gov
+2024-07-31,US,FOMC,Rate Decision,federalreserve.gov
+2024-09-18,US,FOMC,Rate Decision,federalreserve.gov
+2024-11-07,US,FOMC,Rate Decision,federalreserve.gov
+2024-12-18,US,FOMC,Rate Decision,federalreserve.gov
+2025-01-29,US,FOMC,Rate Decision,federalreserve.gov
+2025-03-19,US,FOMC,Rate Decision,federalreserve.gov
+2025-05-07,US,FOMC,Rate Decision,federalreserve.gov
+2025-06-18,US,FOMC,Rate Decision,federalreserve.gov
+2025-07-30,US,FOMC,Rate Decision,federalreserve.gov
+2025-09-17,US,FOMC,Rate Decision,federalreserve.gov
+2025-10-29,US,FOMC,Rate Decision,federalreserve.gov
+2025-12-10,US,FOMC,Rate Decision,federalreserve.gov
+2026-01-28,US,FOMC,Rate Decision,federalreserve.gov
+2026-03-18,US,FOMC,Rate Decision,federalreserve.gov
+2026-04-29,US,FOMC,Rate Decision,federalreserve.gov
+2026-06-17,US,FOMC,Rate Decision,federalreserve.gov
+2026-07-29,US,FOMC,Rate Decision,federalreserve.gov
+2026-09-16,US,FOMC,Rate Decision,federalreserve.gov
+2026-10-28,US,FOMC,Rate Decision,federalreserve.gov
+2026-12-09,US,FOMC,Rate Decision,federalreserve.gov
+2025-04-09,IN,RBI,MPC Rate Decision,rbi.org.in
+2025-06-06,IN,RBI,MPC Rate Decision,rbi.org.in
+2025-08-06,IN,RBI,MPC Rate Decision,rbi.org.in
+2025-10-01,IN,RBI,MPC Rate Decision,rbi.org.in
+2025-12-05,IN,RBI,MPC Rate Decision,rbi.org.in
+2026-02-06,IN,RBI,MPC Rate Decision,rbi.org.in
+2026-04-08,IN,RBI,MPC Rate Decision,tradingeconomics.com
+2025-02-06,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2025-03-20,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2025-05-08,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2025-06-19,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2025-08-07,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2025-09-18,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2025-11-06,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2025-12-18,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2026-02-05,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2026-03-19,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2026-04-30,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2026-06-18,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2026-07-30,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2026-09-17,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2026-11-05,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2026-12-17,GB,BOE,MPC Rate Decision,bankofengland.co.uk
+2025-01-30,EA,ECB,Rate Decision,ecb.europa.eu
+2025-03-06,EA,ECB,Rate Decision,ecb.europa.eu
+2025-04-17,EA,ECB,Rate Decision,ecb.europa.eu
+2025-06-05,EA,ECB,Rate Decision,ecb.europa.eu
+2025-07-24,EA,ECB,Rate Decision,ecb.europa.eu
+2025-09-11,EA,ECB,Rate Decision,ecb.europa.eu
+2025-10-30,EA,ECB,Rate Decision,ecb.europa.eu
+2025-12-18,EA,ECB,Rate Decision,ecb.europa.eu
+2026-02-05,EA,ECB,Rate Decision,ecb.europa.eu
+2026-03-19,EA,ECB,Rate Decision,ecb.europa.eu
+2026-04-30,EA,ECB,Rate Decision,ecb.europa.eu
+2026-06-11,EA,ECB,Rate Decision,ecb.europa.eu
+2026-07-23,EA,ECB,Rate Decision,ecb.europa.eu
+2026-09-10,EA,ECB,Rate Decision,ecb.europa.eu
+2026-10-29,EA,ECB,Rate Decision,ecb.europa.eu
+2026-12-17,EA,ECB,Rate Decision,ecb.europa.eu
+2025-02-06,MX,Banxico,Rate Decision,banxico.org.mx (partial - verify)
+2025-03-27,MX,Banxico,Rate Decision,banxico.org.mx (partial - verify)
+2025-05-15,MX,Banxico,Rate Decision,banxico.org.mx (partial - verify)
+2025-06-26,MX,Banxico,Rate Decision,banxico.org.mx (partial - verify)
+2025-08-07,MX,Banxico,Rate Decision,banxico.org.mx (partial - verify)
+2025-09-25,MX,Banxico,Rate Decision,banxico.org.mx (verified from news)
+2025-11-06,MX,Banxico,Rate Decision,banxico.org.mx (partial - verify)
+2025-12-18,MX,Banxico,Rate Decision,banxico.org.mx (partial - verify)
+2026-02-05,MX,Banxico,Rate Decision,banxico.org.mx (verified from news)
+2026-03-27,MX,Banxico,Rate Decision,banxico.org.mx (partial - verify)
+2026-05-25,MX,Banxico,Rate Decision,banxico.org.mx (user verified)
+2025-04-10,PH,BSP,Rate Decision,bsp.gov.ph (partial - verify on bsp.gov.ph)
+2025-06-19,PH,BSP,Rate Decision,bsp.gov.ph (partial - verify on bsp.gov.ph)
+2025-08-28,PH,BSP,Rate Decision,bsp.gov.ph (partial - verify on bsp.gov.ph)
+2025-10-09,PH,BSP,Rate Decision,bsp.gov.ph (partial - verify on bsp.gov.ph)
+2025-12-11,PH,BSP,Rate Decision,bsp.gov.ph (partial - verify on bsp.gov.ph)
+2026-02-19,PH,BSP,Rate Decision,bsp.gov.ph (user verified)
+2026-04-23,PH,BSP,Rate Decision,bsp.gov.ph (user verified)
