@@ -3,100 +3,130 @@
     "basic": {
       "model": "prophet-basic",
       "test_days": 60,
+      "naive_rmse": 0.39173758223245964,
+      "prophet_rmse": 0.8112905606319164,
       "naive_mae": 0.32583333333333353,
       "prophet_mae": 0.6877824782450247,
-      "theil_u": 2.110841365457875,
+      "theil_u": 2.071005176497187,
+      "mae_ratio": 2.110841365457875,
       "direction_accuracy": 0.4166666666666667,
       "interval_coverage_80": 0.48333333333333334
     },
     "events": {
       "model": "prophet-events",
       "test_days": 60,
+      "naive_rmse": 0.39173758223245964,
+      "prophet_rmse": 0.8219792381972555,
       "naive_mae": 0.32583333333333353,
       "prophet_mae": 0.6802224754659133,
-      "theil_u": 2.0876393108928273,
+      "theil_u": 2.0982904767852673,
+      "mae_ratio": 2.0876393108928273,
       "direction_accuracy": 0.48333333333333334,
-      "interval_coverage_80": 0.45
+      "interval_coverage_80": 0.48333333333333334
     }
   },
   "usd_eur": {
     "basic": {
       "model": "prophet-basic",
       "test_days": 60,
+      "naive_rmse": 0.003297784104516249,
+      "prophet_rmse": 0.01026558530685141,
       "naive_mae": 0.002426,
       "prophet_mae": 0.00877096896845362,
-      "theil_u": 3.615403531926471,
+      "theil_u": 3.1128736695628123,
+      "mae_ratio": 3.615403531926471,
       "direction_accuracy": 0.5333333333333333,
-      "interval_coverage_80": 0.48333333333333334
+      "interval_coverage_80": 0.45
     },
     "events": {
       "model": "prophet-events",
       "test_days": 60,
+      "naive_rmse": 0.003297784104516249,
+      "prophet_rmse": 0.010543580419106567,
       "naive_mae": 0.002426,
       "prophet_mae": 0.008986375547580774,
-      "theil_u": 3.7041943724570374,
+      "theil_u": 3.1971712170809927,
+      "mae_ratio": 3.7041943724570374,
       "direction_accuracy": 0.5333333333333333,
-      "interval_coverage_80": 0.4666666666666667
+      "interval_coverage_80": 0.45
     }
   },
   "usd_gbp": {
     "basic": {
       "model": "prophet-basic",
       "test_days": 60,
+      "naive_rmse": 0.0033682344534389673,
+      "prophet_rmse": 0.00796114103937127,
       "naive_mae": 0.0023639999999999993,
       "prophet_mae": 0.006710207738943931,
-      "theil_u": 2.8384973514991256,
+      "theil_u": 2.3635946812559157,
+      "mae_ratio": 2.8384973514991256,
       "direction_accuracy": 0.6333333333333333,
-      "interval_coverage_80": 0.45
+      "interval_coverage_80": 0.43333333333333335
     },
     "events": {
       "model": "prophet-events",
       "test_days": 60,
+      "naive_rmse": 0.0033682344534389673,
+      "prophet_rmse": 0.008053839692542426,
       "naive_mae": 0.0023639999999999993,
       "prophet_mae": 0.006773614195308844,
-      "theil_u": 2.865319033548581,
+      "theil_u": 2.3911161185111256,
+      "mae_ratio": 2.865319033548581,
       "direction_accuracy": 0.6166666666666667,
-      "interval_coverage_80": 0.45
+      "interval_coverage_80": 0.43333333333333335
     }
   },
   "usd_mxn": {
     "basic": {
       "model": "prophet-basic",
       "test_days": 60,
+      "naive_rmse": 0.10502323155695924,
+      "prophet_rmse": 0.33426414580959285,
       "naive_mae": 0.07876166666666642,
       "prophet_mae": 0.28450163882255997,
-      "theil_u": 3.612184084760702,
+      "theil_u": 3.182763859520977,
+      "mae_ratio": 3.612184084760702,
       "direction_accuracy": 0.5166666666666667,
       "interval_coverage_80": 0.38333333333333336
     },
     "events": {
       "model": "prophet-events",
       "test_days": 60,
+      "naive_rmse": 0.10502323155695924,
+      "prophet_rmse": 0.3377104511550836,
       "naive_mae": 0.07876166666666642,
       "prophet_mae": 0.2905467679535594,
-      "theil_u": 3.688936258588911,
+      "theil_u": 3.2155785548450457,
+      "mae_ratio": 3.688936258588911,
       "direction_accuracy": 0.48333333333333334,
-      "interval_coverage_80": 0.38333333333333336
+      "interval_coverage_80": 0.3333333333333333
     }
   },
   "usd_php": {
     "basic": {
       "model": "prophet-basic",
       "test_days": 60,
+      "naive_rmse": 0.2997166161559942,
+      "prophet_rmse": 0.7564267048411875,
       "naive_mae": 0.2362499999999997,
       "prophet_mae": 0.5861191964866238,
-      "theil_u": 2.4809278158164,
+      "theil_u": 2.523806369305492,
+      "mae_ratio": 2.4809278158164,
       "direction_accuracy": 0.55,
       "interval_coverage_80": 0.5166666666666667
     },
     "events": {
       "model": "prophet-events",
       "test_days": 60,
+      "naive_rmse": 0.2997166161559942,
+      "prophet_rmse": 0.7424436479789319,
       "naive_mae": 0.2362499999999997,
       "prophet_mae": 0.5665655542257472,
-      "theil_u": 2.398161076087822,
+      "theil_u": 2.4771521095530806,
+      "mae_ratio": 2.398161076087822,
       "direction_accuracy": 0.6,
-      "interval_coverage_80": 0.55
+      "interval_coverage_80": 0.5333333333333333
     }
   }
 }

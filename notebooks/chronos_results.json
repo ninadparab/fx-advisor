@@ -1,52 +1,67 @@
 {
   "usd_inr": {
-    "model": "chronos-t5-small",
+    "model": "chronos-bolt-small",
     "test_days": 60,
-    "naive_mae": 0.32100000000000034,
-    "chronos_mae": 0.3190261739095047,
-    "theil_u": 0.9938510090638766,
+    "naive_rmse": 0.39173758223245964,
+    "chronos_rmse": 0.4094965235424267,
+    "naive_mae": 0.32583333333333353,
+    "chronos_mae": 0.3242421366373693,
+    "theil_u": 1.0453337696341547,
     "direction_accuracy": 0.6333333333333333,
-    "naive_mape": 0.3409488643034952,
-    "chronos_mape": 0.33906617328843147
+    "naive_mape": 0.34580240053010386,
+    "chronos_mape": 0.34431635003263356,
+    "interval_coverage_80": 0.8666666666666667
   },
   "usd_eur": {
-    "model": "chronos-t5-small",
+    "model": "chronos-bolt-small",
     "test_days": 60,
-    "naive_mae": 0.0024015000000000026,
-    "chronos_mae": 0.002543198025703427,
-    "theil_u": 1.0590039665639908,
+    "naive_rmse": 0.003297784104516249,
+    "chronos_rmse": 0.003421098274879355,
+    "naive_mae": 0.002426,
+    "chronos_mae": 0.0025513250389099075,
+    "theil_u": 1.0373930392211634,
     "direction_accuracy": 0.4666666666666667,
-    "naive_mape": 0.27948565593405256,
-    "chronos_mape": 0.2960052708630818
+    "naive_mape": 0.2823438196687227,
+    "chronos_mape": 0.29697824456096744,
+    "interval_coverage_80": 0.8166666666666667
   },
   "usd_gbp": {
-    "model": "chronos-t5-small",
+    "model": "chronos-bolt-small",
     "test_days": 60,
-    "naive_mae": 0.002362333333333333,
-    "chronos_mae": 0.0023776674149831147,
-    "theil_u": 1.0064910744954627,
+    "naive_rmse": 0.0033682344534389673,
+    "chronos_rmse": 0.003489692989966041,
+    "naive_mae": 0.0023639999999999993,
+    "chronos_mae": 0.002370882877349854,
+    "theil_u": 1.0360600006341794,
     "direction_accuracy": 0.5166666666666667,
-    "naive_mape": 0.3170297061599498,
-    "chronos_mape": 0.31934686800189777
+    "naive_mape": 0.31727341849755947,
+    "chronos_mape": 0.31847148229455724,
+    "interval_coverage_80": 0.7833333333333333
   },
   "usd_mxn": {
-    "model": "chronos-t5-small",
+    "model": "chronos-bolt-small",
     "test_days": 60,
-    "naive_mae": 0.07945166666666648,
-    "chronos_mae": 0.07676598297119117,
-    "theil_u": 0.9661972642217451,
+    "naive_rmse": 0.10502323155695924,
+    "chronos_rmse": 0.10467087461761525,
+    "naive_mae": 0.07876166666666642,
+    "chronos_mae": 0.07607509028116842,
+    "theil_u": 0.9966449619372749,
     "direction_accuracy": 0.5333333333333333,
-    "naive_mape": 0.45246557536589543,
-    "chronos_mape": 0.4368999885157163
+    "naive_mape": 0.4486638112226395,
+    "chronos_mape": 0.4330308430119113,
+    "interval_coverage_80": 0.8166666666666667
   },
   "usd_php": {
-    "model": "chronos-t5-small",
+    "model": "chronos-bolt-small",
     "test_days": 60,
-    "naive_mae": 0.23518333333333305,
-    "chronos_mae": 0.23382576395670565,
-    "theil_u": 0.9942276123167993,
-    "direction_accuracy": 0.5666666666666667,
-    "naive_mape": 0.38929982023584375,
-    "chronos_mape": 0.38700591093623987
+    "naive_rmse": 0.2997166161559942,
+    "chronos_rmse": 0.3046185936877859,
+    "naive_mae": 0.2362499999999997,
+    "chronos_mae": 0.2383869537353514,
+    "theil_u": 1.0163553746023888,
+    "direction_accuracy": 0.55,
+    "naive_mape": 0.3908155797117603,
+    "chronos_mape": 0.3943153200768724,
+    "interval_coverage_80": 0.7666666666666667
   }
 }
