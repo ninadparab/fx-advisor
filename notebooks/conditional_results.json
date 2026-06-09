@@ -1,0 +1,328 @@
+{
+  "chronos_direction": [
+    {
+      "pair": "USD_INR",
+      "condition": "All days",
+      "n": 60,
+      "direction_acc": 63.33333333333333,
+      "p_value": 0.02594694796446073
+    },
+    {
+      "pair": "USD_INR",
+      "condition": "Event window (\u00b12 days)",
+      "n": 13,
+      "direction_acc": 69.23076923076923,
+      "p_value": 0.1334228515625
+    },
+    {
+      "pair": "USD_INR",
+      "condition": "Non-event days",
+      "n": 47,
+      "direction_acc": 61.702127659574465,
+      "p_value": 0.07193254422027451
+    },
+    {
+      "pair": "USD_INR",
+      "condition": "High volatility",
+      "n": 36,
+      "direction_acc": 55.55555555555556,
+      "p_value": 0.308859658514848
+    },
+    {
+      "pair": "USD_EUR",
+      "condition": "All days",
+      "n": 60,
+      "direction_acc": 46.666666666666664,
+      "p_value": 0.740520998405174
+    },
+    {
+      "pair": "USD_EUR",
+      "condition": "Event window (\u00b12 days)",
+      "n": 9,
+      "direction_acc": 44.44444444444444,
+      "p_value": 0.74609375
+    },
+    {
+      "pair": "USD_EUR",
+      "condition": "Non-event days",
+      "n": 51,
+      "direction_acc": 47.05882352941176,
+      "p_value": 0.7120753261340766
+    },
+    {
+      "pair": "USD_EUR",
+      "condition": "High volatility",
+      "n": 17,
+      "direction_acc": 41.17647058823529,
+      "p_value": 0.8338470458984375
+    },
+    {
+      "pair": "USD_EUR",
+      "condition": "Low volatility",
+      "n": 17,
+      "direction_acc": 52.94117647058824,
+      "p_value": 0.5
+    },
+    {
+      "pair": "USD_GBP",
+      "condition": "All days",
+      "n": 60,
+      "direction_acc": 51.66666666666667,
+      "p_value": 0.44871091349571535
+    },
+    {
+      "pair": "USD_GBP",
+      "condition": "Event window (\u00b12 days)",
+      "n": 9,
+      "direction_acc": 44.44444444444444,
+      "p_value": 0.74609375
+    },
+    {
+      "pair": "USD_GBP",
+      "condition": "Non-event days",
+      "n": 51,
+      "direction_acc": 52.94117647058824,
+      "p_value": 0.3898839652765371
+    },
+    {
+      "pair": "USD_GBP",
+      "condition": "High volatility",
+      "n": 21,
+      "direction_acc": 57.14285714285714,
+      "p_value": 0.33181190490722656
+    },
+    {
+      "pair": "USD_MXN",
+      "condition": "All days",
+      "n": 60,
+      "direction_acc": 53.333333333333336,
+      "p_value": 0.3494417138100029
+    },
+    {
+      "pair": "USD_MXN",
+      "condition": "Event window (\u00b12 days)",
+      "n": 15,
+      "direction_acc": 46.666666666666664,
+      "p_value": 0.696380615234375
+    },
+    {
+      "pair": "USD_MXN",
+      "condition": "Non-event days",
+      "n": 45,
+      "direction_acc": 55.55555555555556,
+      "p_value": 0.2757421649012599
+    },
+    {
+      "pair": "USD_MXN",
+      "condition": "High volatility",
+      "n": 39,
+      "direction_acc": 48.717948717948715,
+      "p_value": 0.625370687619579
+    },
+    {
+      "pair": "USD_PHP",
+      "condition": "All days",
+      "n": 60,
+      "direction_acc": 55.00000000000001,
+      "p_value": 0.25947900159482595
+    },
+    {
+      "pair": "USD_PHP",
+      "condition": "Event window (\u00b12 days)",
+      "n": 13,
+      "direction_acc": 69.23076923076923,
+      "p_value": 0.1334228515625
+    },
+    {
+      "pair": "USD_PHP",
+      "condition": "Non-event days",
+      "n": 47,
+      "direction_acc": 51.06382978723404,
+      "p_value": 0.4999999999999999
+    },
+    {
+      "pair": "USD_PHP",
+      "condition": "High volatility",
+      "n": 33,
+      "direction_acc": 51.515151515151516,
+      "p_value": 0.5
+    }
+  ],
+  "garch_volatility": [
+    {
+      "pair": "USD_INR",
+      "condition": "All days",
+      "n": 60,
+      "theil_u_naive": 0.713901819602783,
+      "theil_u_hist": 0.9807606658596306
+    },
+    {
+      "pair": "USD_INR",
+      "condition": "Event window (\u00b12 days)",
+      "n": 13,
+      "theil_u_naive": 0.7450242251701585,
+      "theil_u_hist": 1.0168776558942296
+    },
+    {
+      "pair": "USD_INR",
+      "condition": "Non-event days",
+      "n": 47,
+      "theil_u_naive": 0.7070102453867259,
+      "theil_u_hist": 0.9726680060703191
+    },
+    {
+      "pair": "USD_INR",
+      "condition": "GARCH high-vol forecast",
+      "n": 15,
+      "theil_u_naive": 0.40225667338974624,
+      "theil_u_hist": 1.5269831636145133
+    },
+    {
+      "pair": "USD_INR",
+      "condition": "GARCH low-vol forecast",
+      "n": 15,
+      "theil_u_naive": 0.8643983300451954,
+      "theil_u_hist": 0.943825265368675
+    },
+    {
+      "pair": "USD_EUR",
+      "condition": "All days",
+      "n": 60,
+      "theil_u_naive": 0.698771839304588,
+      "theil_u_hist": 1.0061679916806716
+    },
+    {
+      "pair": "USD_EUR",
+      "condition": "Event window (\u00b12 days)",
+      "n": 9,
+      "theil_u_naive": 0.605541651961048,
+      "theil_u_hist": 1.0124102263608294
+    },
+    {
+      "pair": "USD_EUR",
+      "condition": "Non-event days",
+      "n": 51,
+      "theil_u_naive": 0.7035292890104455,
+      "theil_u_hist": 1.0059167156625357
+    },
+    {
+      "pair": "USD_EUR",
+      "condition": "GARCH high-vol forecast",
+      "n": 15,
+      "theil_u_naive": 0.4346270505311174,
+      "theil_u_hist": 1.0317330049495446
+    },
+    {
+      "pair": "USD_EUR",
+      "condition": "GARCH low-vol forecast",
+      "n": 15,
+      "theil_u_naive": 0.7992276435094473,
+      "theil_u_hist": 1.0513791568065722
+    },
+    {
+      "pair": "USD_GBP",
+      "condition": "All days",
+      "n": 60,
+      "theil_u_naive": 0.6832055430683424,
+      "theil_u_hist": 1.0010274732453481
+    },
+    {
+      "pair": "USD_GBP",
+      "condition": "Event window (\u00b12 days)",
+      "n": 9,
+      "theil_u_naive": 0.49194843824897144,
+      "theil_u_hist": 1.010956742108853
+    },
+    {
+      "pair": "USD_GBP",
+      "condition": "Non-event days",
+      "n": 51,
+      "theil_u_naive": 0.6914302903553399,
+      "theil_u_hist": 1.0007784322507456
+    },
+    {
+      "pair": "USD_GBP",
+      "condition": "GARCH high-vol forecast",
+      "n": 15,
+      "theil_u_naive": 0.181916484501752,
+      "theil_u_hist": 1.030615318755747
+    },
+    {
+      "pair": "USD_GBP",
+      "condition": "GARCH low-vol forecast",
+      "n": 15,
+      "theil_u_naive": 0.8897366997405084,
+      "theil_u_hist": 1.0077781163364732
+    },
+    {
+      "pair": "USD_MXN",
+      "condition": "All days",
+      "n": 60,
+      "theil_u_naive": 0.7219006916929669,
+      "theil_u_hist": 0.9864019682555575
+    },
+    {
+      "pair": "USD_MXN",
+      "condition": "Event window (\u00b12 days)",
+      "n": 15,
+      "theil_u_naive": 0.7733306335559662,
+      "theil_u_hist": 0.9374666923039097
+    },
+    {
+      "pair": "USD_MXN",
+      "condition": "Non-event days",
+      "n": 45,
+      "theil_u_naive": 0.715384219276659,
+      "theil_u_hist": 0.9940086203679619
+    },
+    {
+      "pair": "USD_MXN",
+      "condition": "GARCH high-vol forecast",
+      "n": 15,
+      "theil_u_naive": 0.7156104939216182,
+      "theil_u_hist": 1.0035684604013386
+    },
+    {
+      "pair": "USD_MXN",
+      "condition": "GARCH low-vol forecast",
+      "n": 15,
+      "theil_u_naive": 0.9530284588667088,
+      "theil_u_hist": 0.9776534316550609
+    },
+    {
+      "pair": "USD_PHP",
+      "condition": "All days",
+      "n": 60,
+      "theil_u_naive": 0.7653721609237087,
+      "theil_u_hist": 0.9904243411501457
+    },
+    {
+      "pair": "USD_PHP",
+      "condition": "Event window (\u00b12 days)",
+      "n": 13,
+      "theil_u_naive": 0.6821753540137528,
+      "theil_u_hist": 1.0371189811926653
+    },
+    {
+      "pair": "USD_PHP",
+      "condition": "Non-event days",
+      "n": 47,
+      "theil_u_naive": 0.7732469410938163,
+      "theil_u_hist": 0.9870287209650372
+    },
+    {
+      "pair": "USD_PHP",
+      "condition": "GARCH high-vol forecast",
+      "n": 15,
+      "theil_u_naive": 0.41111006673887945,
+      "theil_u_hist": 1.1126506529121902
+    },
+    {
+      "pair": "USD_PHP",
+      "condition": "GARCH low-vol forecast",
+      "n": 15,
+      "theil_u_naive": 0.8197823673687926,
+      "theil_u_hist": 1.0023763518998323
+    }
+  ]
+}
