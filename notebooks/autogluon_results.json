@@ -1,0 +1,62 @@
+{
+  "usd_inr": {
+    "model": "RecursiveTabular",
+    "evaluation_mode": "multi_step_30day",
+    "test_days": 30,
+    "rmse": 1.4436082886852817,
+    "naive_rmse": 0.3883254648702117,
+    "theil_u": 3.7175215618882285,
+    "mape_pct": 1.3442932097830682,
+    "direction_accuracy": 0.3333333333333333,
+    "predicted_up_rate": 0.0,
+    "actual_up_rate": 0.6666666666666666
+  },
+  "usd_eur": {
+    "model": "WeightedEnsemble",
+    "evaluation_mode": "multi_step_30day",
+    "test_days": 30,
+    "rmse": 0.008438827623657674,
+    "naive_rmse": 0.0022646861445536695,
+    "theil_u": 3.7262680499689376,
+    "mape_pct": 0.8954344789806784,
+    "direction_accuracy": 0.43333333333333335,
+    "predicted_up_rate": 0.0,
+    "actual_up_rate": 0.5666666666666667
+  },
+  "usd_gbp": {
+    "model": "WeightedEnsemble",
+    "evaluation_mode": "multi_step_30day",
+    "test_days": 30,
+    "rmse": 0.0034575228753034462,
+    "naive_rmse": 0.0026735793735490035,
+    "theil_u": 1.2932187125283692,
+    "mape_pct": 0.3710467758680486,
+    "direction_accuracy": 0.7,
+    "predicted_up_rate": 0.6333333333333333,
+    "actual_up_rate": 0.5333333333333333
+  },
+  "usd_mxn": {
+    "model": "WeightedEnsemble",
+    "evaluation_mode": "multi_step_30day",
+    "test_days": 30,
+    "rmse": 0.17849338941540405,
+    "naive_rmse": 0.06590009863422022,
+    "theil_u": 2.7085451025822445,
+    "mape_pct": 0.8660358905745938,
+    "direction_accuracy": 0.6666666666666666,
+    "predicted_up_rate": 0.1,
+    "actual_up_rate": 0.43333333333333335
+  },
+  "usd_php": {
+    "model": "TemporalFusionTransformer",
+    "evaluation_mode": "multi_step_30day",
+    "test_days": 30,
+    "rmse": 1.1489461005936994,
+    "naive_rmse": 0.28018131034504473,
+    "theil_u": 4.100723560678499,
+    "mape_pct": 1.778030824759176,
+    "direction_accuracy": 0.4,
+    "predicted_up_rate": 0.0,
+    "actual_up_rate": 0.6
+  }
+}
