@@ -1,0 +1,86 @@
+{
+  "ets": {
+    "usd_inr": {
+      "model": "auto_ets",
+      "test_days": 60,
+      "rmse": 0.39354843020647334,
+      "naive_rmse": 0.39173758223245964,
+      "theil_u": 1.0046226046622688,
+      "direction_accuracy": 0.5333333333333333
+    },
+    "usd_eur": {
+      "model": "auto_ets",
+      "test_days": 60,
+      "rmse": 0.0032812756177605655,
+      "naive_rmse": 0.003297784104516249,
+      "theil_u": 0.9949940668544446,
+      "direction_accuracy": 0.6166666666666667
+    },
+    "usd_gbp": {
+      "model": "auto_ets",
+      "test_days": 60,
+      "rmse": 0.003351789881315464,
+      "naive_rmse": 0.0033682344534389673,
+      "theil_u": 0.9951177471904566,
+      "direction_accuracy": 0.5833333333333334
+    },
+    "usd_mxn": {
+      "model": "auto_ets",
+      "test_days": 60,
+      "rmse": 0.10444649082442993,
+      "naive_rmse": 0.10502323155695924,
+      "theil_u": 0.9945084461411139,
+      "direction_accuracy": 0.6
+    },
+    "usd_php": {
+      "model": "auto_ets",
+      "test_days": 60,
+      "rmse": 0.30079463699551373,
+      "naive_rmse": 0.2997166161559942,
+      "theil_u": 1.0035968003821265,
+      "direction_accuracy": 0.55
+    }
+  },
+  "arima": {
+    "usd_inr": {
+      "model": "auto_arima",
+      "test_days": 60,
+      "rmse": 0.39100881840017604,
+      "naive_rmse": 0.39173758223245964,
+      "theil_u": 0.998139663220132,
+      "direction_accuracy": 0.6166666666666667
+    },
+    "usd_eur": {
+      "model": "auto_arima",
+      "test_days": 60,
+      "rmse": 0.003297784104516249,
+      "naive_rmse": 0.003297784104516249,
+      "theil_u": 1.0,
+      "direction_accuracy": 0.4666666666666667
+    },
+    "usd_gbp": {
+      "model": "auto_arima",
+      "test_days": 60,
+      "rmse": 0.0032757050236175136,
+      "naive_rmse": 0.0033682344534389673,
+      "theil_u": 0.9725288037099137,
+      "direction_accuracy": 0.6333333333333333
+    },
+    "usd_mxn": {
+      "model": "auto_arima",
+      "test_days": 60,
+      "rmse": 0.10438670845879791,
+      "naive_rmse": 0.10502323155695924,
+      "theil_u": 0.9939392162217355,
+      "direction_accuracy": 0.6333333333333333
+    },
+    "usd_php": {
+      "model": "auto_arima",
+      "test_days": 60,
+      "rmse": 0.30111968925871,
+      "naive_rmse": 0.2997166161559942,
+      "theil_u": 1.0046813323889443,
+      "direction_accuracy": 0.5666666666666667
+    }
+  }
+}
