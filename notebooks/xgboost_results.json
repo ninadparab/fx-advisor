@@ -1,0 +1,52 @@
+{
+  "usd_inr": {
+    "model": "xgboost_classifier",
+    "test_days": 60,
+    "correct": 31,
+    "direction_accuracy": 0.5166666666666667,
+    "p_value_vs_random": 0.44871091349571535,
+    "significant_at_95": false,
+    "predicted_up_rate": 0.7,
+    "actual_up_rate": 0.6166666666666667
+  },
+  "usd_eur": {
+    "model": "xgboost_classifier",
+    "test_days": 60,
+    "correct": 34,
+    "direction_accuracy": 0.5666666666666667,
+    "p_value_vs_random": 0.18314700335164558,
+    "significant_at_95": false,
+    "predicted_up_rate": 0.65,
+    "actual_up_rate": 0.55
+  },
+  "usd_gbp": {
+    "model": "xgboost_classifier",
+    "test_days": 60,
+    "correct": 33,
+    "direction_accuracy": 0.55,
+    "p_value_vs_random": 0.25947900159482595,
+    "significant_at_95": false,
+    "predicted_up_rate": 0.7666666666666667,
+    "actual_up_rate": 0.55
+  },
+  "usd_mxn": {
+    "model": "xgboost_classifier",
+    "test_days": 60,
+    "correct": 28,
+    "direction_accuracy": 0.4666666666666667,
+    "p_value_vs_random": 0.740520998405174,
+    "significant_at_95": false,
+    "predicted_up_rate": 0.55,
+    "actual_up_rate": 0.48333333333333334
+  },
+  "usd_php": {
+    "model": "xgboost_classifier",
+    "test_days": 60,
+    "correct": 36,
+    "direction_accuracy": 0.6,
+    "p_value_vs_random": 0.07750095200163032,
+    "significant_at_95": false,
+    "predicted_up_rate": 0.5833333333333334,
+    "actual_up_rate": 0.6166666666666667
+  }
+}
