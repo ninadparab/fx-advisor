@@ -10,7 +10,8 @@ import plotly.graph_objects as go
 from data_access import (
     load_fx_history,
     load_latest_signals,
-    load_central_bank_events
+    load_central_bank_events,
+    credentials_configured
 )
 from signals import (
     compute_bollinger_signal,
@@ -67,6 +68,37 @@ st.sidebar.caption(
     "Built on rigorous testing of 7+ forecasting models. "
     "[Repo](https://github.com/ninadparab/fx-advisor)"
 )
+
+
+# ============ CREDENTIAL CHECK ============
+
+if not credentials_configured():
+    st.error(
+        "**AWS credentials not configured.** "
+        "This dashboard reads live data from AWS Athena and DynamoDB and requires credentials to work."
+    )
+    st.markdown(
+        """
+        **For Streamlit Cloud deployment:**
+        1. Click the three-dot menu in the upper right of your app
+        2. Select **Settings → Secrets**
+        3. Paste the following (replacing with your IAM user's credentials):
+        
+        ```toml
+        [aws]
+        access_key_id = "AKIA..."
+        secret_access_key = "your_secret_here"
+        region = "us-east-2"
+        ```
+        
+        4. Click **Save**. The app will restart automatically.
+        
+        **IAM permissions needed:** AmazonAthenaFullAccess, AmazonS3ReadOnlyAccess, AmazonDynamoDBReadOnlyAccess
+        
+        **For local development:** Run `aws configure` in your terminal.
+        """
+    )
+    st.stop()
 
 
 # ============ LOAD DATA ============

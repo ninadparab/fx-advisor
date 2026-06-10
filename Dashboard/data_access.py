@@ -1,4 +1,5 @@
 """Data access layer — fetches FX rates and signals from AWS."""
+import os
 import boto3
 import pandas as pd
 import io
@@ -10,17 +11,42 @@ REGION = 'us-east-2'
 ATHENA_OUTPUT = 's3://fx-rates-ninpar/athena-results/'
 DYNAMODB_TABLE = 'fx-signals'
 
-# Pick up credentials from Streamlit secrets if running on cloud
-try:
-    aws_creds = st.secrets["aws"]
-    boto3.setup_default_session(
-        aws_access_key_id=aws_creds["access_key_id"],
-        aws_secret_access_key=aws_creds["secret_access_key"],
-        region_name=aws_creds["region"]
-    )
-except (FileNotFoundError, KeyError):
-    # Local development — uses AWS CLI credentials
-    pass
+
+def _configure_aws_credentials():
+    """Set up AWS credentials.
+    
+    Priority:
+    1. Streamlit Cloud secrets (st.secrets["aws"])
+    2. Local AWS CLI credentials (~/.aws/credentials)
+    3. Environment variables
+    
+    Returns True if credentials are configured, False otherwise.
+    """
+    # Try Streamlit secrets first
+    try:
+        if "aws" in st.secrets:
+            aws_creds = st.secrets["aws"]
+            os.environ["AWS_ACCESS_KEY_ID"] = aws_creds["access_key_id"]
+            os.environ["AWS_SECRET_ACCESS_KEY"] = aws_creds["secret_access_key"]
+            os.environ["AWS_DEFAULT_REGION"] = aws_creds.get("region", REGION)
+            return True
+    except (FileNotFoundError, KeyError, AttributeError):
+        pass
+    
+    # Fall back to local credentials — boto3 finds them automatically
+    # via ~/.aws/credentials or environment variables
+    try:
+        session = boto3.Session()
+        creds = session.get_credentials()
+        if creds is None:
+            return False
+        return True
+    except Exception:
+        return False
+
+
+# Configure credentials at module load time
+_CREDS_CONFIGURED = _configure_aws_credentials()
 
 
 def _decimal_to_float(obj):
@@ -36,6 +62,13 @@ def _decimal_to_float(obj):
 
 def _query_athena(query, database='fx_rates_db'):
     """Run an Athena query and return a DataFrame."""
+    if not _CREDS_CONFIGURED:
+        raise Exception(
+            "AWS credentials not configured. "
+            "On Streamlit Cloud: add AWS credentials in app Settings -> Secrets. "
+            "Locally: run `aws configure` or set AWS_ACCESS_KEY_ID/AWS_SECRET_ACCESS_KEY."
+        )
+    
     athena = boto3.client('athena', region_name=REGION)
     s3 = boto3.client('s3', region_name=REGION)
     
@@ -64,6 +97,11 @@ def _query_athena(query, database='fx_rates_db'):
     return pd.read_csv(io.BytesIO(obj['Body'].read()))
 
 
+def credentials_configured():
+    """Public check — used by app.py to show a helpful error if AWS isn't set up."""
+    return _CREDS_CONFIGURED
+
+
 @st.cache_data(ttl=3600)
 def load_fx_history(days=120):
     """Load the most recent N days of FX rates for all pairs."""
@@ -85,11 +123,10 @@ def load_fx_history(days=120):
 
 @st.cache_data(ttl=3600)
 def load_latest_signals():
-    """Load latest precomputed Bollinger signals from DynamoDB.
+    """Load latest precomputed Bollinger signals from DynamoDB."""
+    if not _CREDS_CONFIGURED:
+        return {}
     
-    DynamoDB stores pairs as USD_INR (uppercase); dashboard uses usd_inr (lowercase).
-    Returns dict mapping lowercase pair name to signal record.
-    Returns empty dict if table unavailable — dashboard falls back to live computation."""
     try:
         dynamodb = boto3.resource('dynamodb', region_name=REGION)
         table = dynamodb.Table(DYNAMODB_TABLE)
@@ -107,7 +144,7 @@ def load_latest_signals():
             response = table.query(
                 KeyConditionExpression='currency_pair = :p',
                 ExpressionAttributeValues={':p': upper_pair},
-                ScanIndexForward=False,  # most recent first
+                ScanIndexForward=False,
                 Limit=1
             )
             if response['Items']:
@@ -121,9 +158,6 @@ def load_latest_signals():
 
 def load_central_bank_events():
     """Load the central bank meeting schedule."""
-    import os
-    
-    # Try multiple paths — works both locally and on Streamlit Cloud
     candidate_paths = [
         '../infrastructure/central_bank_meetings.csv',
         'infrastructure/central_bank_meetings.csv',
@@ -136,5 +170,4 @@ def load_central_bank_events():
             df['date'] = pd.to_datetime(df['date'])
             return df
     
-    # Fall back to empty if file not found — dashboard handles this gracefully
     return pd.DataFrame(columns=['date', 'central_bank'])
