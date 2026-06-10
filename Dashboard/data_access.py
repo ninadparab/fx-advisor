@@ -88,7 +88,13 @@ def _query_athena(query, database='fx_rates_db'):
     
     if state != 'SUCCEEDED':
         reason = status['QueryExecution']['Status'].get('StateChangeReason', 'unknown')
-        raise Exception(f"Athena query failed: {reason}")
+        athena_error = status['QueryExecution']['Status'].get('AthenaError', {})
+        error_msg = athena_error.get('ErrorMessage', '')
+        full_msg = f"Athena query failed (state={state}): {reason}"
+        if error_msg:
+            full_msg += f"\nAthena error: {error_msg}"
+        full_msg += f"\nQuery: {query[:200]}..."
+        raise Exception(full_msg)
     
     result_location = status['QueryExecution']['ResultConfiguration']['OutputLocation']
     bucket = result_location.split('/')[2]
