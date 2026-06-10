@@ -130,7 +130,9 @@ boll_multi = get_bollinger_from_signal(lambda_signal, selected_pair) if lambda_s
 boll_live = compute_bollinger_signal(rate_series, window=30)
 
 # GARCH: always live (Lambda doesn't compute volatility yet)
-garch = compute_garch_signal(rate_series.values, rate_series.index)
+# Cache key includes pair + latest date so we recompute when new data arrives
+garch_cache_key = f"{selected_pair}_{rate_series.index[-1].date()}"
+garch = compute_garch_signal(rate_series.values, rate_series.index, cache_key=garch_cache_key)
 
 # Event awareness
 days_event, event_bank = days_to_next_event(selected_pair, events)

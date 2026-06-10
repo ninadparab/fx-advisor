@@ -89,13 +89,14 @@ def get_bollinger_from_signal(signal_dict, pair):
 # ============ GARCH VOLATILITY ============
 
 @st.cache_data(ttl=3600)
-def compute_garch_signal(rate_series_values, dates):
+def compute_garch_signal(_rate_series_values, _dates, cache_key=""):
     """GARCH(1,1) Student-t volatility forecast.
     
-    Takes values + dates separately so Streamlit can cache the result.
-    Returns volatility tier, next-day forecast, and 5-day average.
+    Args prefixed with underscore are skipped by Streamlit's hasher.
+    `cache_key` (typically the pair name + latest date) is what Streamlit
+    actually hashes to decide cache hits.
     """
-    series = pd.Series(rate_series_values, index=pd.to_datetime(dates))
+    series = pd.Series(_rate_series_values, index=pd.to_datetime(_dates))
     returns = series.pct_change().dropna() * 100  # percent
     
     try:
