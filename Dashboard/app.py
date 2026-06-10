@@ -103,10 +103,21 @@ if not credentials_configured():
 
 # ============ LOAD DATA ============
 
-with st.spinner("Loading FX data..."):
-    df = load_fx_history(days=max(history_days + 60, 250))
-    signals = load_latest_signals()
-    events = load_central_bank_events()
+try:
+    with st.spinner("Loading FX data..."):
+        df = load_fx_history(days=max(history_days + 60, 250))
+        signals = load_latest_signals()
+        events = load_central_bank_events()
+except Exception as e:
+    st.error(f"**Data loading failed.**\n\n```\n{str(e)}\n```")
+    st.markdown(
+        "Common causes:\n"
+        "- IAM user missing `s3:PutObject` on `s3://fx-rates-ninpar/athena-results/`\n"
+        "- IAM user missing Glue Data Catalog permissions (`AWSGlueConsoleFullAccess`)\n"
+        "- The `fx_rates_db.usd` table doesn't exist in the configured region\n"
+        "- Athena workgroup permissions"
+    )
+    st.stop()
 
 rate_series = df[selected_pair].dropna()
 
